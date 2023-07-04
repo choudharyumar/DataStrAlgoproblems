@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1677734893 source:c:\users\hp\desktop\c++\calculate area of circle\main.c
+	<stdio.h>
+	<stdlib.h>
+

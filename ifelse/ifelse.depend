@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1687863799 source:c:\users\hp\desktop\c\ifelse\main.c
+	<stdio.h>
+	<stdlib.h>
+
