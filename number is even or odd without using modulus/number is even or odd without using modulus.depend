@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1677914923 source:c:\users\hp\desktop\c++\number is even or odd without using modulus\main.c
+	<stdio.h>
+	<stdlib.h>
+
