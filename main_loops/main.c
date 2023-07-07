@@ -60,7 +60,7 @@ int main()
 
 
 }
-*/
+
 //Write a program to print all Armstrong numbers under 1000.
 int main()
 {
@@ -84,12 +84,63 @@ int main()
 }
 }
 
+
 //Write a program to calculate LCM of two numbers
 int main()
 {
-    int a,b;
+    int a,b,x;
     printf("enter the value of two numbers \n");
     scanf("%d%d",&a,&b);
-    printf("the lcm of number a is :%d \n the lcm of number b is : %d \n",)
+    for(x=1;x<=a*b;x++)
 
+        if (x%a==0&&x%b==0)
+
+            break;
+
+    printf("the lcm of number a and b is : %d \n",x);
+
+
+
+}
+
+
+//Write a program to calculate HCF of two numbers
+
+int main()
+{
+    int h,a,b;
+    printf("enter the value of two numbers :\n");
+    scanf("%d%d",&a,&b);
+    for (h=a<b?a:b;h>=1;h--)
+
+        if(a%h==0&&b%h==0)
+            break;
+        printf("the hcf of two numbers is %d \n",h);
+
+
+
+}
+*/
+//Write a program to check whether a given number is prime or not
+
+int main()
+{
+    int a;
+    printf("enter the value of a number :\n");
+    scanf("%d",&a);
+    for(int i=2;i<=a-1;i++)
+
+    if(a%i==0)
+        break;
+    if( )
+    {
+        printf("the given num is not prime");
+    }
+    else
+    {
+        printf("the given num is  prime");
+    }
+
+
+    return 0;
 }
