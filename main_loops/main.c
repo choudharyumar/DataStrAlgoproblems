@@ -120,29 +120,67 @@ int main()
 
 
 }
-*/
+/*
 //Write a program to check whether a given number is prime or not
 
 int main()
 {
-    int a;
-    printf("enter the value of a number :\n");
-    scanf("%d",&a);
-    for(int i=2;i<=a-1;i++)
+    int n,i;
+    printf("enter a number :");
+    scanf("%d",&n);
+    for( i=2;i<=n-1;i++)
 
-    if(a%i==0)
+        if(n%i==0 )
         break;
-    if( )
-    {
-        printf("the given num is not prime");
-    }
-    else
-    {
-        printf("the given num is  prime");
-    }
+
+        if(i==n )
+        {
+            printf(" %d the given number is  prime \n",n);
+        }
+
+        else
+        {
+            printf(" %d the given number is not  prime \n",n);
+        }
 
 
-    return 0;
+
 }
 
+//Write a program to print all prime numbers between two given numbers
+
+int main()
+{
+    int a,b,i,x;
+    printf("enter the value of two numbers: \n");
+    scanf("%d%d",&a,&b);
+    for(i=a+1;i<=b-1;i++)
+    {
+        for(x=2;x<i;x++)
+
+        if(i%x==0)
+        break;
+    if(i==x)
+    printf(" %d\n ",x);
+    }
+
+}
+*/
+//Write a program to print all prime factors of a given number. For example prime factors of 36 are 2,2,3,3
+
+int main()
+{
+    int a,i;
+    printf("enter the value of a number: \n");
+    scanf("%d",&a);
+    for(i=2;a>1;i++)
+    {
+        while(a%i==0)
+        {
+                printf("%d ",i);
+                a=a/i;
+        }
+    }
+
+}
 
