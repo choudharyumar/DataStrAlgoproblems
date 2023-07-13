@@ -165,7 +165,7 @@ int main()
     }
 
 }
-*/
+
 //Write a program to print all prime factors of a given number. For example prime factors of 36 are 2,2,3,3
 
 int main()
@@ -184,3 +184,44 @@ int main()
 
 }
 
+//Write a program to print first N terms of Fibonacci series
+
+
+int main()
+{
+    int n,i;
+    int a=-1;
+        int b=1;
+    printf("enter the value of n:\n");
+    scanf("%d",&n);
+    for(i=0;i<=n;i++)
+    {
+        int c=a+b;
+    printf("%d ",c);
+    a=b;
+    b=c;
+    }
+
+}
+*/
+//Write a program to check co-prime number
+int main()
+{
+    int a,b,i,x;
+    printf("enter the value of n:\n");
+    scanf("%d%d",&a,&b);
+    x=a<b?a:b;
+    for(i=2;i<=x;i++)
+    {
+        if(a%i==0 && b%i==0)
+            break;
+
+    }
+    if(i==x+1)
+        {
+                printf("yes it is a co prime number ");
+        }
+        else
+            printf("no it is not a co prime number ");
+
+}
