@@ -107,6 +107,7 @@ return s;
 
 */
 
+/*
 //program to calculate the sum of squares of natural numbers
 
 int s_sum();
@@ -124,5 +125,34 @@ int s_sum (){
     s=s+i*i;
  }
  return s;
+
+}
+*/
+
+// program to calculate the sum of two prime numbers
+
+main(){
+int x,i;
+printf("enter a number");
+scanf("%d",&x);
+for(i=2;i<=(x-i);i=nextPrime(i)){
+
+    if(isPrime(x-i))
+        printf("%d +%d=%d\n",i,x-i,x);
+    }
+}
+int nextPrime(int n){
+    do
+    n++;
+    while(!isPrime(n));
+    return (n);
+}
+
+int isPrime(int n){
+    int i;
+    for(i=2;i<n;i++)
+    if(n%i==0)
+    return 0;
+return(1);
 
 }
