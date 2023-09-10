@@ -129,6 +129,8 @@ int s_sum (){
 }
 */
 
+
+/*
 // program to calculate the sum of two prime numbers
 
 main(){
@@ -155,4 +157,25 @@ int isPrime(int n){
     return 0;
 return(1);
 
+}
+*/
+
+// program of factorial with recursion
+
+int fact(int );
+ main()
+{
+int k=fact(4);
+printf("the factorail of given number is %d",k);
+getch();
+return 0;
+}
+
+int fact(int n){
+if (n>1){
+    return (n*fact(n-1));
+}
+else{
+    return 1;
+}
 }
