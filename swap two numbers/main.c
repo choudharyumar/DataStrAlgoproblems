@@ -26,7 +26,7 @@ int main()
     return 0;
 }
 
-
+printf("hello world");
 // working on a big thing
 
 
